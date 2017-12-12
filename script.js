@@ -35,13 +35,13 @@ function validate() {
 	var dateValid = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
 
 	if(!inputAge.value || !isFinite(inputAge.value) || inputAge.value <= 0 ){
-		alert("Your age is invalid")
+		alert("Your age is invalid");
 
 		return false;
 	}
 
 	if(usernameValid.test(inputUserName.value) == false){
-		alert("Your name is invalid")
+		alert("Your name is invalid");
 
 		return false;
 	}
