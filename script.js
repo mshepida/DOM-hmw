@@ -34,9 +34,11 @@ document.getElementsByTagName('body')[0].appendChild(form);
 function validate() {
 	var usernameValid = /^user_+[0-9a-z@]/i;
 	//var dateValid = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
-	var date = new Date();
+	var date = new Date(2017, 4, 3);
 	var currDate = date.getDate();
+	if(currDate<10) currDate = "0" + currDate;
 	var currMonth = date.getMonth() + 1;
+	if(currMonth<10) currMonth = "0" + currMonth;
 	var currYear = date.getFullYear();
 	var fullDate = currDate + "/" + currMonth + "/" + currYear;
 
