@@ -36,9 +36,13 @@ function validate() {
 
 	var date = new Date();
 	var currDate = date.getDate();
-	if(currDate<10) currDate = "0" + currDate;
+	if(currDate<10){
+		currDate = "0" + currDate;
+	}
 	var currMonth = date.getMonth() + 1;
-	if(currMonth<10) currMonth = "0" + currMonth;
+	if(currMonth<10){ 
+		currMonth = "0" + currMonth;
+	}	
 	var currYear = date.getFullYear();
 	var fullDate = currDate + "/" + currMonth + "/" + currYear;
 
